@@ -1,7 +1,9 @@
 =run
+CIDM_4385_CH_3_DEMO\:launchMode=run
+CIDM_4385_CH_3_DEMO\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.EEE587D4-3997-42B8-A2BB-69ECC68904CD
 Hello\:launchMode=run
 Hello\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
-LAST_LAUNCH_TIMESTAMP=1423683979979
+LAST_LAUNCH_TIMESTAMP=1424289428226
 eclipse.preferences.version=1
 preference.show.console.onError=true
 preference.studio.perspective.version=103
