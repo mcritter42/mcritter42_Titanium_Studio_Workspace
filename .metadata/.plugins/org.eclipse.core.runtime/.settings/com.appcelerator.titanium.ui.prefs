@@ -1,6 +1,6 @@
 =run
 CIDM_4385_CH_3_DEMO\:launchMode=run
-CIDM_4385_CH_3_DEMO\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.EEE587D4-3997-42B8-A2BB-69ECC68904CD
+CIDM_4385_CH_3_DEMO\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.D17268C9-3DCA-4B9A-B869-24C04CE8AE44
 Hello\:launchMode=run
 Hello\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
 LAST_LAUNCH_TIMESTAMP=1424289428226

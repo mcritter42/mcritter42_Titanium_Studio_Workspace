@@ -20,3 +20,10 @@ $.mainWindow.addEventListener("close", function()
 {
 	$.destroy();
 });
+
+
+function doClick(e) {
+    alert($.label.text);
+}
+
+$.index.open();
