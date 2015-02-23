@@ -35,4 +35,3 @@ $.mainWindow.addEventListener('close', function()
 		
 		}]);
 	});
-	$.mainWindow.open();

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.appcelerator.titanium.mobile.ui.android.installer.launchConfigurationType">
-<stringAttribute key="ATTR_PROJECT_NAME" value="Hello"/>
+<stringAttribute key="ATTR_PROJECT_NAME" value="CIDM_4385_CH_3_DEMO"/>
 <stringAttribute key="abi" value="armeabi"/>
 <stringAttribute key="device-id" value="LGD850946e7400"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Hello"/>
+<listEntry value="/CIDM_4385_CH_3_DEMO"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
