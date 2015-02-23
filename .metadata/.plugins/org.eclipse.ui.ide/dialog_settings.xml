@@ -11,4 +11,11 @@
 		<item value="org.eclipse.platform:4.3.2.v20140221-1852"/>
 		<item value="org.eclipse.rcp:4.3.2.v20140221-1700"/>
 	</list>
+	<section name="CleanDialogSettings">
+		<item value="484" key="DIALOG_WIDTH"/>
+		<item value="173" key="DIALOG_Y_ORIGIN"/>
+		<item value="354" key="DIALOG_HEIGHT"/>
+		<item value="400" key="DIALOG_X_ORIGIN"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+	</section>
 </section>
