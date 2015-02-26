@@ -32,4 +32,4 @@ Alloy.Collections.cars.reset
 	]
 );
 
-carsController.mainWindow.open();
+$.mainWindow.open();

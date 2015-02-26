@@ -1,5 +1,5 @@
 <Alloy>
-	<Model src="cars" instance="true" id="car" />
+	<Model src="car" instance="true" id="car" />
 	
 	<Window>
 		<lable id="make_lbl" text="($.car.make)"></lable>
