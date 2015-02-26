@@ -2,10 +2,7 @@ Alloy.Collections.instance("cars");
 
 var carsController = Alloy.createController("cars");
 
-Alloy.Collections.cars.reset
-(	
-	[
-		{
+	Alloy.Collections.cars.reset([{
 		"make" : "Honda", 
 		"model" : "Civic"
 		}, 
@@ -28,8 +25,7 @@ Alloy.Collections.cars.reset
 		{
 		"make" : "Nissan",
 		"model" : "Altima"
-		}
-	]
-);
+		}]);
 
-$.mainWindow.open();
+	
+	$.mainWindow.open();
