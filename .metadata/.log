@@ -1425,3 +1425,12 @@ java.lang.NullPointerException
 	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
 	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
 	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.git.core 4 1 2015-02-26 15:33:56.815
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-02-26 15:33:56.815
+!MESSAGE Failed to acquire lock for git repository.
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-02-26 15:33:56.815
+!MESSAGE Failed to acquire lock for git repository.
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-02-26 15:33:56.815
+!MESSAGE Failed to acquire lock for git repository.
