@@ -1,0 +1,23 @@
+$.container.addEventListener("click", function(_event)
+	{
+	
+	toggleButtonByClicked(_event.sourse.id);
+	}
+);
+
+function toggleButtonByIdClick(_ButtonId) 
+{
+	if(_ButtonId === "off")
+	{
+		{
+			$.on.hide();
+			$.off.show();
+		}
+		
+	else (_ButtonId === "on")
+		{
+			$.on.show();
+			$.off.hide();
+		}
+	}
+)

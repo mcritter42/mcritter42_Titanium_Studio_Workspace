@@ -1,0 +1,10 @@
+<Alloy>
+	<View id="container">
+	<Button id="on">Button is On</Button>
+	<Button id="off">Button is Off</Button>
+	</View>
+	
+	<Window id="main window" class="container">
+		<Requires type="widget" src="buttonToggle" id="buttonToggle" />
+	</Window>
+</Alloy>

@@ -1,0 +1,4 @@
+<Alloy>
+	<Button id="on">Button is On</Button>
+	<Button id="off">Button is Off</Button>
+</Alloy>

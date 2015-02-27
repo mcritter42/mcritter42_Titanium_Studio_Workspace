@@ -1,4 +1,6 @@
 =run
+CIDM_4385_CH3_3_WIDGET\:launchMode=run
+CIDM_4385_CH3_3_WIDGET\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut.LGD850946e7400
 CIDM_4385_CH_3_DEMO\:launchMode=run
 CIDM_4385_CH_3_DEMO\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut.LGD850946e7400
 Hello\:launchMode=run

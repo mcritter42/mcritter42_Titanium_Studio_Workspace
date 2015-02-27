@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="container">
+	<Button id="on">Button is On</Button>
+	<Button id="off">Button is Off</Button>
+	</View>
+</Alloy>

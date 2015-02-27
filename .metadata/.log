@@ -1434,3 +1434,108 @@ java.lang.NullPointerException
 !MESSAGE Failed to acquire lock for git repository.
 !SUBENTRY 1 com.aptana.git.core 4 0 2015-02-26 15:33:56.815
 !MESSAGE Failed to acquire lock for git repository.
+
+!ENTRY com.appcelerator.titanium.alloy.core 4 0 2015-02-26 16:56:15.508
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to parse for file:/Users/markritter/Desktop/Titanium_Studio_Workspace/CIDM_4385_CH3_3_WIDGET/app/widgets/widget/views/widget.xml for Alloy XML validation
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.createWarning(AlloyViewValidator.java:410)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.checkifIDUnused(AlloyViewValidator.java:358)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.access$1(AlloyViewValidator.java:350)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:249)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:1)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:155)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:121)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.doBuildFile(AlloyViewValidator.java:228)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.buildEnding(AlloyViewValidator.java:130)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.appcelerator.titanium.alloy.core 4 0 2015-02-26 16:57:07.339
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to parse for file:/Users/markritter/Desktop/Titanium_Studio_Workspace/CIDM_4385_CH3_3_WIDGET/app/widgets/widget/views/widget.xml for Alloy XML validation
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.createWarning(AlloyViewValidator.java:410)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.checkifIDUnused(AlloyViewValidator.java:358)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.access$1(AlloyViewValidator.java:350)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:249)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:1)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:155)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:121)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.doBuildFile(AlloyViewValidator.java:228)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.buildEnding(AlloyViewValidator.java:130)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.appcelerator.titanium.alloy.core 4 0 2015-02-26 16:57:46.044
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to parse for file:/Users/markritter/Desktop/Titanium_Studio_Workspace/CIDM_4385_CH3_3_WIDGET/app/widgets/widget/views/widget.xml for Alloy XML validation
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.createWarning(AlloyViewValidator.java:410)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.checkifIDUnused(AlloyViewValidator.java:358)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.access$1(AlloyViewValidator.java:350)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:249)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:1)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:155)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:121)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.doBuildFile(AlloyViewValidator.java:228)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.buildEnding(AlloyViewValidator.java:130)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.appcelerator.titanium.alloy.core 4 0 2015-02-26 16:57:47.561
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to parse for file:/Users/markritter/Desktop/Titanium_Studio_Workspace/CIDM_4385_CH3_3_WIDGET/app/widgets/widget/views/widget.xml for Alloy XML validation
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.createWarning(AlloyViewValidator.java:410)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.checkifIDUnused(AlloyViewValidator.java:358)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.access$1(AlloyViewValidator.java:350)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:249)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:1)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:155)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:121)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.doBuildFile(AlloyViewValidator.java:228)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.buildEnding(AlloyViewValidator.java:130)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.appcelerator.titanium.alloy.core 4 0 2015-02-26 16:57:49.074
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to parse for file:/Users/markritter/Desktop/Titanium_Studio_Workspace/CIDM_4385_CH3_3_WIDGET/app/widgets/widget/views/widget.xml for Alloy XML validation
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.createWarning(AlloyViewValidator.java:410)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.checkifIDUnused(AlloyViewValidator.java:358)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.access$1(AlloyViewValidator.java:350)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:249)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:1)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:155)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:121)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.doBuildFile(AlloyViewValidator.java:228)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.buildEnding(AlloyViewValidator.java:130)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)

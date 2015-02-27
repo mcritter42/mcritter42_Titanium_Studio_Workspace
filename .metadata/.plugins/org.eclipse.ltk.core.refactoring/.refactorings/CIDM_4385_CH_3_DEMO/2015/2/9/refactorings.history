@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;CIDM_4385_CH_3_DEMO/app/models/car.js&apos; to &apos;cars.js&apos;" description="Rename resource &apos;car.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="app/models/car.js" name="cars.js" stamp="1424985807368" updateReferences="true"/>
-</session>

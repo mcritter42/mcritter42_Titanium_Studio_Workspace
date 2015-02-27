@@ -1,0 +1,5 @@
+var toggleButtonWidget = Alloy.createWidget("widget");
+
+$.mainWindow.add(toggleButtonWidget.getview());
+
+$.mainWindow.open();

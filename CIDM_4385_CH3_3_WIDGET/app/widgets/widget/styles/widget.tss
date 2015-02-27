@@ -1,0 +1,5 @@
+"#container" :
+{
+	height: Ti.UI.SIZE,
+	widget: Ti.UI.SIZE
+}
