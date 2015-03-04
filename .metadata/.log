@@ -4777,3 +4777,302 @@ Caused by: java.lang.RuntimeException: Unable to evaluate expression using this 
 	at com.sun.org.apache.xpath.internal.axes.LocPathIterator.execute(LocPathIterator.java:210)
 	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:335)
 	... 12 more
+
+!ENTRY com.aptana.git.core 4 1 2015-03-04 01:38:06.524
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-03-04 01:38:06.524
+!MESSAGE Failed to acquire lock for git repository.
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-03-04 01:38:06.524
+!MESSAGE Failed to acquire lock for git repository.
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-03-04 01:38:06.524
+!MESSAGE Failed to acquire lock for git repository.
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-03-04 01:40:45.643
+!MESSAGE An internal error occurred during: "Refreshing git index".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4397)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1076)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:833)
+	at org.eclipse.swt.widgets.Display.create(Display.java:816)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:707)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:698)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1396)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.postLabelEvent(GitLightweightDecorator.java:324)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.indexChanged(GitLightweightDecorator.java:353)
+	at com.aptana.git.core.model.GitRepository.fireIndexChangeEvent(GitRepository.java:1168)
+	at com.aptana.git.core.model.GitIndex.postIndexChange(GitIndex.java:333)
+	at com.aptana.git.core.model.GitIndex.refresh(GitIndex.java:320)
+	at com.aptana.git.core.model.GitIndex.refresh(GitIndex.java:133)
+	at com.aptana.git.core.model.GitIndexRefreshJob.run(GitIndexRefreshJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-03-04 01:40:48.629
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2015-03-04 09:00:49.812 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/markritter/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/markritter/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-03-04 09:01:04.259
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2015-03-04 09:01:06.712
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2015-03-04 09:01:06.712
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2015-03-04 09:01:06.713
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.android.core 4 0 2015-03-04 09:58:20.582
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  javax.xml.transform.TransformerException: Unable to evaluate expression using this context
+!STACK 0
+
+javax.xml.transform.TransformerException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:363)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:125)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:101)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:183)
+	at com.appcelerator.titanium.core.tiapp.TiAppModel.getNodes(TiAppModel.java:398)
+	at com.appcelerator.titanium.android.core.tiapp.TiAppAndroidSectionReconciler.buildFile(TiAppAndroidSectionReconciler.java:63)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+Caused by: java.lang.RuntimeException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.axes.NodeSequence.setRoot(NodeSequence.java:212)
+	at com.sun.org.apache.xpath.internal.axes.LocPathIterator.execute(LocPathIterator.java:210)
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:335)
+	... 12 more
+---------
+java.lang.RuntimeException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.axes.NodeSequence.setRoot(NodeSequence.java:212)
+	at com.sun.org.apache.xpath.internal.axes.LocPathIterator.execute(LocPathIterator.java:210)
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:335)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:125)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:101)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:183)
+	at com.appcelerator.titanium.core.tiapp.TiAppModel.getNodes(TiAppModel.java:398)
+	at com.appcelerator.titanium.android.core.tiapp.TiAppAndroidSectionReconciler.buildFile(TiAppAndroidSectionReconciler.java:63)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+--------------- linked to ------------------
+javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:196)
+	at com.appcelerator.titanium.core.tiapp.TiAppModel.getNodes(TiAppModel.java:398)
+	at com.appcelerator.titanium.android.core.tiapp.TiAppAndroidSectionReconciler.buildFile(TiAppAndroidSectionReconciler.java:63)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+Caused by: javax.xml.transform.TransformerException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:363)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:125)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:101)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:183)
+	... 9 more
+Caused by: java.lang.RuntimeException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.axes.NodeSequence.setRoot(NodeSequence.java:212)
+	at com.sun.org.apache.xpath.internal.axes.LocPathIterator.execute(LocPathIterator.java:210)
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:335)
+	... 12 more
+
+!ENTRY com.appcelerator.titanium.android.core 4 0 2015-03-04 09:58:24.288
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  javax.xml.transform.TransformerException: Unable to evaluate expression using this context
+!STACK 0
+
+javax.xml.transform.TransformerException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:363)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:125)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:101)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:183)
+	at com.appcelerator.titanium.core.tiapp.TiAppModel.getNodes(TiAppModel.java:398)
+	at com.appcelerator.titanium.android.core.tiapp.TiAppAndroidSectionReconciler.buildFile(TiAppAndroidSectionReconciler.java:63)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+Caused by: java.lang.RuntimeException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.axes.NodeSequence.setRoot(NodeSequence.java:212)
+	at com.sun.org.apache.xpath.internal.axes.LocPathIterator.execute(LocPathIterator.java:210)
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:335)
+	... 12 more
+---------
+java.lang.RuntimeException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.axes.NodeSequence.setRoot(NodeSequence.java:212)
+	at com.sun.org.apache.xpath.internal.axes.LocPathIterator.execute(LocPathIterator.java:210)
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:335)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:125)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:101)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:183)
+	at com.appcelerator.titanium.core.tiapp.TiAppModel.getNodes(TiAppModel.java:398)
+	at com.appcelerator.titanium.android.core.tiapp.TiAppAndroidSectionReconciler.buildFile(TiAppAndroidSectionReconciler.java:63)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+--------------- linked to ------------------
+javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:196)
+	at com.appcelerator.titanium.core.tiapp.TiAppModel.getNodes(TiAppModel.java:398)
+	at com.appcelerator.titanium.android.core.tiapp.TiAppAndroidSectionReconciler.buildFile(TiAppAndroidSectionReconciler.java:63)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+Caused by: javax.xml.transform.TransformerException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:363)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:125)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.eval(XPathExpressionImpl.java:101)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:183)
+	... 9 more
+Caused by: java.lang.RuntimeException: Unable to evaluate expression using this context
+	at com.sun.org.apache.xpath.internal.axes.NodeSequence.setRoot(NodeSequence.java:212)
+	at com.sun.org.apache.xpath.internal.axes.LocPathIterator.execute(LocPathIterator.java:210)
+	at com.sun.org.apache.xpath.internal.XPath.execute(XPath.java:335)
+	... 12 more
+
+!ENTRY com.aptana.core 4 1 2015-03-04 10:32:50.899
+!MESSAGE [ERROR]  file already exists: /Users/markritter/Desktop/Titanium_Studio_Workspace/StudyAbroadTest/app/views/menu.xml
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-03-04 10:53:52.417
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2015-03-04 13:45:40.162 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/markritter/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/markritter/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2015-03-04 13:46:16.411
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2015-03-04 13:46:16.411
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2015-03-04 13:46:16.412
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.ui.workbench 4 2 2015-03-04 13:47:13.084
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.update.ui.internal.ProvisioningProvider.getProvisioningUI(ProvisioningProvider.java:26)
+	at com.appcelerator.titanium.update.ui.internal.ProvisioningProvider.getOperation(ProvisioningProvider.java:31)
+	at com.appcelerator.titanium.update.core.release.TitaniumStudioRelease.getUpdate(TitaniumStudioRelease.java:74)
+	at com.appcelerator.titanium.update.core.release.TitaniumStudioRelease.isInstalled(TitaniumStudioRelease.java:123)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater$NotInstalledFilter.include(TitaniumSDKUpdater.java:86)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater$NotInstalledFilter.include(TitaniumSDKUpdater.java:1)
+	at com.aptana.core.util.AndFilter.include(AndFilter.java:39)
+	at com.aptana.core.util.CollectionsUtil.filterInPlace(CollectionsUtil.java:249)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.filterToRelevantUninstalledUpdates(TitaniumSDKUpdater.java:652)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.getStudioUpdates(TitaniumSDKUpdater.java:327)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasStudioUpdates(TitaniumSDKUpdater.java:229)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:223)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:199)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.earlyStartup(TitaniumUpdateStartup.java:60)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2555)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-03-04 13:47:13.085
+!MESSAGE An internal error occurred during: "Retrieving version for Titanium Studio".
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.update.ui.internal.ProvisioningProvider.getProvisioningUI(ProvisioningProvider.java:26)
+	at com.appcelerator.titanium.update.ui.internal.ProvisioningProvider.getOperation(ProvisioningProvider.java:31)
+	at com.appcelerator.titanium.update.core.release.TitaniumStudioRelease.getUpdate(TitaniumStudioRelease.java:74)
+	at com.appcelerator.titanium.update.core.release.TitaniumStudioRelease$1.run(TitaniumStudioRelease.java:54)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.ui 4 4 2015-03-04 13:47:13.125
+!MESSAGE Unhandled Exception
+
+!ENTRY com.appcelerator.titanium.update.ui 4 0 2015-03-04 13:47:13.125
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.update.ui.internal.ProvisioningProvider.getProvisioningUI(ProvisioningProvider.java:26)
+	at com.appcelerator.titanium.update.ui.internal.ProvisioningProvider.getOperation(ProvisioningProvider.java:31)
+	at com.appcelerator.titanium.update.core.release.TitaniumStudioRelease.getUpdate(TitaniumStudioRelease.java:74)
+	at com.appcelerator.titanium.update.core.release.TitaniumStudioRelease.isInstalled(TitaniumStudioRelease.java:123)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater$NotInstalledFilter.include(TitaniumSDKUpdater.java:86)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater$NotInstalledFilter.include(TitaniumSDKUpdater.java:1)
+	at com.aptana.core.util.AndFilter.include(AndFilter.java:39)
+	at com.aptana.core.util.CollectionsUtil.filterInPlace(CollectionsUtil.java:249)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.filterToRelevantUninstalledUpdates(TitaniumSDKUpdater.java:652)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.getStudioUpdates(TitaniumSDKUpdater.java:327)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasStudioUpdates(TitaniumSDKUpdater.java:229)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:223)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:199)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.earlyStartup(TitaniumUpdateStartup.java:60)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2555)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-03-04 13:47:14.943
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:234)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2015-03-04 13:47:15.672 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/markritter/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/markritter/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-03-04 13:47:36.206
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2015-03-04 13:48:05.070
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2015-03-04 13:48:05.070
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2015-03-04 13:48:05.071
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'

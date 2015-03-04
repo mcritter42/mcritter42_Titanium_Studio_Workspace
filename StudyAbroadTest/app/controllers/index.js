@@ -32,4 +32,11 @@ tbl_data.push(tvr);
 
 $.TV.setData(tbl_data);
 
+function doClick(e) {
+    $.menu.setdata(tbl_data);
+}
+function openWin2(e) {
+    Alloy.createController('win2').getView().open();
+}
+
 $.index.open();

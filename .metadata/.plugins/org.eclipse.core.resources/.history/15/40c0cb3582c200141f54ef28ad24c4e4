@@ -1,0 +1,56 @@
+var win = Ti.UI.createWindow({
+  fullscreen: true
+});
+
+var activity = win.activity;
+
+activity.onCreateOptionsMenu = function(e){
+  var menu = e.menu;
+  var menuItem = menu.add({ 
+    title: "Item 1", 
+    icon:  "item1.png",
+    showAsAction: Ti.Android.SHOW_AS_ACTION_IF_ROOM
+  });
+  menuItem.addEventListener("click", function(e) {
+    Ti.API.debug("I was clicked");
+  });
+};
+
+
+var tbl_data = 
+[
+
+];
+
+for(var i =0; i <10; i++){
+	var tvr = Ti.UI.createTableViewRow({
+		height: 'auto',
+		backgroundColor: 'transparent'
+	});
+	
+	var view = Titanium.UI.createView({
+  backgroundColor:'white',
+  left: '10',
+  right: '10',
+  height: '100', 
+  bottom: '20'
+});
+
+var lable = Ti.UI.createLabel({
+	title: 'row' + i, 
+	backgroundColor: 'grey'
+});
+
+tvr.add(view);
+
+view.add(lable);
+
+tbl_data.push(tvr);
+
+}
+
+$.TV.setData(tbl_data);
+
+$.win.open();
+
+$.index.open();
