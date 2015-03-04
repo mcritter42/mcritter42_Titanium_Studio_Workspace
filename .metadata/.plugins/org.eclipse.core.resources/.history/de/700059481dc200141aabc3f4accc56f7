@@ -1,0 +1,31 @@
+var tbl_data = 
+[
+
+];
+
+for(var i =0; i <10; i++){
+	var tvr = Ti.UI.createTableViewRow({
+		height: 'auto'
+	});
+	
+	var view = Titanium.UI.createView({
+  backgroundColor:'red',
+  width: '340', height: '100'
+});
+var lable = Ti.UI.createLabel({
+	title: 'row' + i
+});
+
+tvr.add(view);
+
+view.add(lable);
+
+tbl_data.push(tvr);
+
+}
+
+// $.TV.add(view);
+
+$.TV.setData(tbl_data);
+
+$.index.open();

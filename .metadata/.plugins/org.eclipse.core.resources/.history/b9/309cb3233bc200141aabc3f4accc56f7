@@ -1,0 +1,22 @@
+".container": {
+	backgroundColor: "#e9e9e9"
+}
+// ".Lable_Test": {
+	// color: "white", 
+	// font: {fontSize: "35"}
+// }
+// ".The_View": {
+	// backgroundColor:"#e9e9e9",
+	// height: "15%", 
+// }
+".TheTV": {
+	backgroundColor: "transparent"
+}
+// ".The_Row": {
+	// height: "auto"
+// }
+".Header": {
+	height: "30%",
+	top: "0", 
+	backgroundColor: "maroon"
+}

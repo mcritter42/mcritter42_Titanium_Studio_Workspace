@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="Theme.Maroon" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarItemBackground">@drawable/selectable_background_maroon</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Maroon</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Maroon</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Maroon</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Maroon</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Maroon</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_maroon</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_maroon</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Maroon</item>
+
+                <!-- Light.DarkActionBar specific -->
+        <item name="actionBarWidgetTheme">@style/Theme.Maroon.Widget</item>
+
+    </style>
+
+    <style name="ActionBar.Solid.Maroon" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/ab_solid_maroon</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_maroon</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_maroon</item>
+        <item name="progressBarStyle">@style/ProgressBar.Maroon</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Maroon" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/ab_transparent_maroon</item>
+        <item name="progressBarStyle">@style/ProgressBar.Maroon</item>
+    </style>
+	
+    <style name="PopupMenu.Maroon" parent="@style/Widget.AppCompat.PopupMenu">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_maroon</item>	
+    </style>
+	
+    <style name="DropDownListView.Maroon" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_maroon</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Maroon" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_maroon</item>
+    </style>
+	
+    <style name="DropDownNav.Maroon" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_maroon</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_maroon</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_maroon</item>
+    </style>
+    
+    <style name="ProgressBar.Maroon" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_maroon</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Maroon" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_maroon</item>
+    </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Maroon.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Maroon</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Maroon</item>
+    </style>
+
+</resources>

@@ -1,0 +1,9 @@
+var tbl_data = 
+[
+	{title:'Row 1'}, 
+	{title:'Row 2'}, 
+	{title:'Row 3'},
+];
+$.TV.setData(tbl_data);
+
+$.index.open();
