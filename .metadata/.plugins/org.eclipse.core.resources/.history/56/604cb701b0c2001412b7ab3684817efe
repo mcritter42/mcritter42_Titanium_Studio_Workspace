@@ -1,5 +1,5 @@
 <Alloy>    
-	<Window class="container" id="menu">
+	<Window class="menu">
 		
         <Menu>
             <MenuItem title="log in" icon="/ic_menu_help.png" onClick="doClick"/>

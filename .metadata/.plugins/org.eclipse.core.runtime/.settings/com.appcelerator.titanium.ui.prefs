@@ -2,7 +2,7 @@
 CIDM_4385_CH3_3_WIDGET\:launchMode=run
 CIDM_4385_CH3_3_WIDGET\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.53CEE41C-19FF-4AA0-B884-A772419C4640
 CIDM_4385_CH_3_DEMO\:launchMode=run
-CIDM_4385_CH_3_DEMO\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.EEE587D4-3997-42B8-A2BB-69ECC68904CD
+CIDM_4385_CH_3_DEMO\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut.LGD850946e7400
 CIDM_4385_CH_5_TIGRAM\:launchMode=run
 CIDM_4385_CH_5_TIGRAM\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.EEE587D4-3997-42B8-A2BB-69ECC68904CD
 Hello\:launchMode=run

@@ -5076,3 +5076,24 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/markritt
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
 !SUBENTRY 1 org.eclipse.ui 2 0 2015-03-04 13:48:05.071
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.alloy.core 4 0 2015-03-04 14:49:42.152
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Failed to parse for file:/Users/markritter/Desktop/Titanium_Studio_Workspace/StudyAbroadTest/app/views/menu.xml for Alloy XML validation
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.createWarning(AlloyViewValidator.java:410)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.checkifIDUnused(AlloyViewValidator.java:358)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.access$1(AlloyViewValidator.java:350)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:249)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator$1.include(AlloyViewValidator.java:1)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:155)
+	at com.aptana.parsing.util.ParseUtil.treeApply(ParseUtil.java:121)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.doBuildFile(AlloyViewValidator.java:228)
+	at com.appcelerator.titanium.alloy.core.validators.AlloyViewValidator.buildEnding(AlloyViewValidator.java:130)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
