@@ -1,0 +1,35 @@
+var tbl_data = [
+	{properties : {title: "Hydrogen"} },
+	{properties : {title: "Helium"} },
+	{properties : {title: "Lithium"} },
+	{properties : {title: "Beryllium"} },
+	{properties : {title: "Boron"}	},
+	{properties : {title: "Carbon"} },
+	{properties : {title: "Nitrogen"}}
+];
+
+for(var i =0; i < tbl_data.Length; i++){
+	var tvr = Ti.UI.createTableViewRow({
+		height: 'auto',
+		backgroundColor: 'transparent'
+	});
+	
+	var view = Titanium.UI.createView({
+  		backgroundColor:'white',
+  		left: '10',
+  		right: '10',
+  		height: '100', 
+  		bottom: '20'
+});
+
+tvr.add(view);
+
+tbl_data.push(tvr);
+}
+
+$.TV.setData(tbl_data);
+
+function doClick(e) {
+    $.menu.open();
+}
+$.index.open();

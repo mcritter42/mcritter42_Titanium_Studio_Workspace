@@ -3,19 +3,11 @@
 		
         <Menu>
         	
-            <MenuItem title="log in" icon="/ic_menu_help.png" onClick="doClick"/>
+            <MenuItem title="log in" icon="ic_menu_white_48dp.png" onClick="doClick"/>
 
         </Menu>
         
-		<View class="Header"/>
 		
-		<TableView id="TV" class="TheTV" >
-			<!-- <TableViewRow class="The_Row">
-				<View class="The_View">
-					<Label id="test" class="Lable_Test"> HELLO WORLD </Label>
-				</View>
-			</TableViewRow> -->
-		</TableView>
 		
 	</Window>
 </Alloy>

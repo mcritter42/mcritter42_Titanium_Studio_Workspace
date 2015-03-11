@@ -1,9 +1,0 @@
-<Alloy>
-	<Model src="cars" instance="true" id="car" />
-	
-	<Window>
-		<lable id="make_lbl" text="($.car.make)"></lable>
-		<lable id="model_lbl" text="($.car.model)"></lable>
-		<Button id="closeBtn">Clsoe Window</Button>
-	</Window>
-</Alloy>

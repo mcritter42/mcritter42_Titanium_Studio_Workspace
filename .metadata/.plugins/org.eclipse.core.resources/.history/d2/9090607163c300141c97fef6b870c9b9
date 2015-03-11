@@ -1,0 +1,41 @@
+var tbl_data = [];
+
+for(var i =0; i <10; i++){
+	var tvr = Ti.UI.createTableViewRow({
+		height: 'auto',
+		backgroundColor: 'transparent'
+	});
+	
+	var view = Titanium.UI.createView({
+  		backgroundColor:'white',
+  		left: '10',
+  		right: '10',
+  		height: '100', 
+  		bottom: '20'
+});
+
+var textArea = Ti.UI.createTextArea({
+  borderWidth: 2,
+  borderColor: '#bbb',
+  borderRadius: 5,
+  color: '#888',
+  font: {fontSize:20, fontWeight:'bold'},
+  keyboardType: Ti.UI.KEYBOARD_NUMBER_PAD,
+  returnKeyType: Ti.UI.RETURNKEY_GO,
+  textAlign: 'left',
+  value: 'I am a textarea',
+  top: 60,
+  width: 300, height : 70
+});
+
+tvr.add(view);
+view.add(textArea);
+tbl_data.push(tvr);
+}
+
+$.TV.setData(tbl_data);
+
+function doClick(e) {
+    $.menu.open();
+}
+$.index.open();
