@@ -1,0 +1,16 @@
+".container": {
+	backgroundColor: "grey"
+}
+".TheTV": {
+	backgroundColor: "transparent",
+	 top: "65"
+	 }
+// ".The_Row": {
+	// height: "auto"
+// }
+
+".Header": {
+	height: "20%",
+	top: "0", 
+	backgroundColor: "maroon"
+}

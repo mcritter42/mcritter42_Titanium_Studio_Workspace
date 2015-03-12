@@ -1,0 +1,13 @@
+<Alloy>    
+	<Window class="container">
+		
+        <Menu> id="menuBar">
+        	
+            <MenuItem title="log in" icon="ic_menu_white_48dp.png" onClick="doClick"/>
+            
+        </Menu>
+        
+		
+		
+	</Window>
+</Alloy>

@@ -1,0 +1,9 @@
+<Alloy>    
+	<Window class="container">
+        <Menu platform="android" class="menuBar">
+            <MenuItem title="log in" icon="ic_menu_white_48dp.png" onClick="doClick"/>
+        </Menu>
+        <RightNavButton platform="ios" icon="ic_menu_white_48dp.png" class="menuBar"
+
+	</Window>
+</Alloy>

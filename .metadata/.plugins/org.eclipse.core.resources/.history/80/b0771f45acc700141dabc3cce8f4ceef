@@ -1,0 +1,44 @@
+"Window": {
+	backgroundColor: "#fff"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	font: {
+		fontSize: 20,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'center'
+} 
+
+'Lable{platform=android}':
+{
+	color: '#000'
+}, 
+
+'Window{platform=android}':
+{
+	modal: false
+}, 
+
+'TextField':
+{
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED, 
+	borderColor : 'black'
+}, 
+
+'TextField{platform=android}':
+{
+	borderRadius: 6,
+	borderColor: 'black', 
+	borderWidth: 1
+}, 
+
+'ImageView{platform=ios}':
+{
+	preventDefaultImage: true
+}
+
+

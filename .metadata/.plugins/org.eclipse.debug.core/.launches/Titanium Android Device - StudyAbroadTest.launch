@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.appcelerator.titanium.mobile.ui.android.installer.launchConfigurationType">
+<booleanAttribute key="ATTR_MINIFY" value="true"/>
 <stringAttribute key="ATTR_PROJECT_NAME" value="StudyAbroadTest"/>
 <stringAttribute key="abi" value="armeabi"/>
 <stringAttribute key="device-id" value="LGD850946e7400"/>
+<stringAttribute key="key_password" value=""/>
+<stringAttribute key="keystore_alias" value=""/>
+<stringAttribute key="keystore_password" value=""/>
+<stringAttribute key="keystore_path" value=""/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/StudyAbroadTest"/>
 </listAttribute>

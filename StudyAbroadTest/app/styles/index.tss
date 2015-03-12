@@ -1,13 +1,6 @@
 ".container": {
-	backgroundColor: "grey"}
-// ".Lable_Test": {
-	// color: "white", 
-	// font: {fontSize: "35"}
-// }
-// ".The_View": {
-	// backgroundColor:"#e9e9e9",
-	// height: "15%", 
-//}
+	backgroundColor: "white"
+}
 ".TheTV": {
 	backgroundColor: "transparent",
 	 top: "65"
@@ -16,7 +9,7 @@
 	// height: "auto"
 // }
 
-".Header": {
+"menuBar": {
 	height: "20%",
 	top: "0", 
 	backgroundColor: "maroon"

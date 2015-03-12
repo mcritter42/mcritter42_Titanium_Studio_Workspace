@@ -1,0 +1,21 @@
+<Alloy>    
+	<Window class="container">
+        <Menu platform="android" class="menuBar">
+            <MenuItem title="log in" icon="ic_menu_white_48dp.png" onClick="doClick"/>
+        </Menu>
+        <RightNavButton platform="ios" icon="ic_menu_white_48dp.png" class="menuBar"/>
+        
+        <TableViewRow>
+        		<TableView>
+					<View id="one" src="tab1">tab1</View>
+				</TableView>
+				<TableView>
+					<View id="two" src="tab2">tab2</View>
+				</TableView>
+				<TableView>
+					<View id="three" src="tab3">tab3</View>
+				</TableView>
+        </TableViewRow>
+				
+	</Window>
+</Alloy>

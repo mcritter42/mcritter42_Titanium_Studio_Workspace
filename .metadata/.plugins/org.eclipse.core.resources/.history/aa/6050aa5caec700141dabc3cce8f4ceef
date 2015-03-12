@@ -1,0 +1,10 @@
+<Alloy>
+	<Tab title="feed">
+		<Window id="feedWindow" title="feed">
+			<rightNavButton platform="ios">
+				<Button id="cameraButton">Camera</Button>
+			</RightNavButton>
+			<TableView id="feedTable"></TableView>
+		</Window>
+	</Tab>
+</Alloy>

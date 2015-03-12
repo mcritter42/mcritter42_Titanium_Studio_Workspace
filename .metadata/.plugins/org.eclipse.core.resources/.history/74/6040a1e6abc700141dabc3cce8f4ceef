@@ -1,0 +1,7 @@
+<Alloy>
+	<Tab title="settings">
+		<Window title="settings">
+			<Label>This is feed tab</Label>
+		</Window>
+	</Tab>
+</Alloy>

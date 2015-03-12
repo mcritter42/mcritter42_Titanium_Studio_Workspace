@@ -1,7 +1,0 @@
-<Alloy>
-	<Window class="container">
-		<TableView id="TV">
-			
-		</TableView>
-	</Window>
-</Alloy>
