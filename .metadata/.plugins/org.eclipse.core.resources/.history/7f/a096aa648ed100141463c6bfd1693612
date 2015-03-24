@@ -1,0 +1,9 @@
+".container": {
+	backgroundColor: "white"
+}
+".one": {
+	backgroundColor: "black", 
+	width: "200dp", 
+	height: "100dp", 
+	top: "200dp"
+}

@@ -1,0 +1,19 @@
+<Alloy>    
+	<Window class="container">
+        <Menu platform="android" class="menuBar">
+            <MenuItem title="log in" icon="ic_menu_white_48dp.png" onClick="doClick"/>
+        </Menu>
+        <RightNavButton platform="ios" icon="ic_menu_white_48dp.png" class="menuBar"/>
+        <TableView>
+        		<TableViewRow>
+					<Button id="one" class="one" onClick="OpenAgenda" src="tab1">Agenda</Button>
+				</TableViewRow>
+				<TableViewRow>
+					<Button id="two"  class="one" onClick="OpenMap" src="tab2">Map</Button>
+				</TableViewRow>
+				<TableViewRow>
+					<Button id="three" class="one" onClick="OpenSettings" src="tab3">Settings</Button>
+				</TableViewRow>
+        </TableView>		
+	</Window>
+</Alloy>

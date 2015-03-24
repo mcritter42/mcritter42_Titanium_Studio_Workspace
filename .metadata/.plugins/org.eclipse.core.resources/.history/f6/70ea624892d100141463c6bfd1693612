@@ -1,0 +1,16 @@
+function doClick(e) {
+    $.menu.open();
+}
+
+function OpenAgenda(e){
+    Titanium.API.info("You clicked the button Agenda");
+};
+
+function OpenMap(e){
+    Titanium.API.info("You clicked the button maps");
+};
+
+function OpenSettings(e){
+    Titanium.API.info("You clicked the button settings");
+};
+$.index.open();

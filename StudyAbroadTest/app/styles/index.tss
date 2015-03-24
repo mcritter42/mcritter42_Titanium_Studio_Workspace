@@ -1,16 +1,8 @@
 ".container": {
 	backgroundColor: "white"
 }
-".TheTV": {
-	backgroundColor: "transparent",
-	 top: "65"
-	 }
-// ".The_Row": {
-	// height: "auto"
-// }
-
-"menuBar": {
-	height: "20%",
-	top: "0", 
-	backgroundColor: "maroon"
+".one": {
+	backgroundColor: "red", 
+	width: "300dp", 
+	height: "125dp",
 }

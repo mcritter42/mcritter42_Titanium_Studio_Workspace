@@ -1,0 +1,19 @@
+function doClick(e) {
+    $.menu.open();
+}
+
+function OpenAgenda(e){
+    $.Agenda.open();
+};
+
+function OpenMap(e){
+    $.Map.open();
+};
+
+$.Settings.AddEventListener('click', function(e) {
+if (e.source.child_controller) {
+      controller = Alloy.createController(e.source.child_controller);
+      $.Container.open(controller.Settings());
+    }
+});
+$.index.open();

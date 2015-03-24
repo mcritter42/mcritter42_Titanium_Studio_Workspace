@@ -1,0 +1,16 @@
+function doClick(e) {
+    $.menu.open();
+}
+
+function OpenAgenda(e){
+    $.Agenda.open();
+};
+
+function OpenMap(e){
+    $.Map.open();
+};
+
+function OpenSettings(e){
+    $.Settings.open();
+};
+$.index.open();
