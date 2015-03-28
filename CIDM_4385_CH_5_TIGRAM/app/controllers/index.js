@@ -36,13 +36,13 @@ function doOpen()
   }
 }
 
-var user = Alloy.createModel('User');
+var user = Alloy.createModel('user');
 
 user.login("mcritter42", "critter42", function(_response) {
 	
 	if(_response.success)
 	{
-		$.index.open();
+		$.tabGroup.open();
 		
 	} else {
   		alert("Error starting application " + _response.error);

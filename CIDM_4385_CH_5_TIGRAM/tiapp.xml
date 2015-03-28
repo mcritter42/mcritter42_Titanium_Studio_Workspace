@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <property name="acs-api-key-production" type="string">Yn2FjKR7mEsfLS0lZang5nf8LoBII6u5</property>
-    <property name="acs-api-key-development" type="string">BRFYraKW45xYySuACnw0g52T29PXFKzk</property>
+    <property name="acs-api-key-development" type="string">rIVWnTy0yvtJkilhJHHZbBtsov3Bm88I</property>
     <id>edu.wtamu.cis.cidm4385.Tigram</id>
-    <name>CIDM_CH_5_TIGRAM</name>
+    <name>CIDM_4385_CH_5_TIGRAM</name>
     <version>1.0</version>
     <publisher>markritter</publisher>
     <url>http://example.com</url>

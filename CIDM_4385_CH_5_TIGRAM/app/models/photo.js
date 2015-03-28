@@ -2,7 +2,7 @@ exports.definition = {
 	config: {
 
 		adapter: {
-			type: "sql",
+			type: "acs",
 			collection_name: "photo"
 		}
 	},

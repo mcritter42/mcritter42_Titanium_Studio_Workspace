@@ -19,7 +19,7 @@ exports.definition = {
 						(
 							{
 								login: _login,
-								password: _password,
+								password: _password
 							}, 
 					function(e)
 						{
@@ -45,14 +45,11 @@ exports.definition = {
 									success: false,
 									model: null,
 									error: e
-								}
-							);						
-						}
+						});						
 					}
-				);
+				});
 			}	
-		}
-	);
+		});
 
 		return Model;
 },
@@ -66,5 +63,5 @@ extendCollection: function(Collection)
 		);
 			
 		return Collection;
-	}
+	},
 };
