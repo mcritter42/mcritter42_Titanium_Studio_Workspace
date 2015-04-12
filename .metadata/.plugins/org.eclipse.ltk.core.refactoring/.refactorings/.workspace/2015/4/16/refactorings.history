@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;CIDM_4385_CH_5_TIGRAM/app/lib/progressWindow.js&apos;" deleteContents="false" description="Delete resource &apos;CIDM_4385_CH_5_TIGRAM/app/lib/progressWindow.js&apos;" element1="/CIDM_4385_CH_5_TIGRAM/app/lib/progressWindow.js" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1428871192885"/>
+</session>

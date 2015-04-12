@@ -9,3 +9,9 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+// Using FB module in the latest release of Appcelerator
+
+Alloy.Globals.FB = require('facebook');
+
+// using our own CommonJS-exported progress window library
+Alloy.Globals.PW = require('progressWindow');

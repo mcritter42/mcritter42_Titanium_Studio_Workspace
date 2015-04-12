@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.appcelerator.titanium.mobile.ui.ios.simulator.launchConfigurationType">
+<booleanAttribute key="ATTR_CLEAN_BEFORE_LAUNCH" value="true"/>
+<stringAttribute key="ATTR_PROJECT_NAME" value="CIDM_4385_CH_5_TIGRAM"/>
+<stringAttribute key="device_id" value="7B9BFDD8-0456-4B40-AADF-66083763B0E1"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/CIDM_4385_CH_5_TIGRAM"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="process_factory_id" value="com.appcelerator.titanium.ui.logLevelFilteringProcessFactory"/>
+<stringAttribute key="sdk_version" value="8.3"/>
+<stringAttribute key="simulator_version" value="8.3"/>
+</launchConfiguration>

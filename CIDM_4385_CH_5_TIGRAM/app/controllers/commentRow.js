@@ -9,9 +9,12 @@ if (user.photo && user.photo.urls) {
 
 $.comment.text = model.attributes.content;
 
+// check for first name last name…
 $.userName.text = (user.first_name || "") + " " + (user.last_name || "");
 
+// if no name then use the username
 $.userName.text = $.userName.text.trim().length !== 0 ? $.userName.text.trim() : user.username;
 $.date.text = moment(model.attributes.created_at).fromNow();
 
-$.row.comment_id = model.id || ''; 
+// save the model id for use later
+$.row.comment_id = model.id || '';

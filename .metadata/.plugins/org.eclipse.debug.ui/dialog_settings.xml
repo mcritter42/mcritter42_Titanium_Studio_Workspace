@@ -10,8 +10,8 @@
 		<item value=", com.appcelerator.titanium.mobile.ui.android.simulator.launchConfigurationType, com.aptana.js.debug.core.webbrowserLaunchConfigurationType, com.appcelerator.titanium.mobile.ui.ios.simulator.launchConfigurationType, com.appcelerator.titanium.mobile.ui.android.installer.launchConfigurationType, " key="org.eclipse.debug.ui.EXPANDED_NODES"/>
 		<item value="640" key="DIALOG_HEIGHT"/>
 		<item value="263" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1"/>
-		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
 		<item value="736" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2"/>
+		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_SHORTCUT_DIALOG">
 		<item value="298" key="DIALOG_WIDTH"/>
