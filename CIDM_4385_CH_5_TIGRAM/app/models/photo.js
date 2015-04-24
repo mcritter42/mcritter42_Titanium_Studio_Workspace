@@ -1,118 +1,123 @@
 exports.definition = {
-	config : {
 
-		adapter : {
-			type : "acs",
-			collection_name : "photos"
-		}
-	},
-	extendModel : function(Model) {
-		_.extend(Model.prototype, {
-			// extended functions and properties go here
+  config : {
 
-			/**
-			 * finds your own photos and those of your friends
-			 * @param {Object} _user
-			 * @param {Object} _options
-			 */
-			findMyPhotosAndWhoIFollow : function(_user, _options) {
-				var collection = this;
+    "adapter" : {
+      "type" : "acs",
+      "collection_name" : "photos"
+    }
+  },
 
-				// get all of the current users friends
-				_user.getFriends(function(_resp) {
-					if (_resp.success) {
+  extendModel : function(Model) {
+    _.extend(Model.prototype, {
 
-						// pluck the user ids and add current users id
-						var idList = _.pluck(_resp.collection.models, "id");
-						idList.push(_user.id);
+      // extended functions go here
 
-						// set up where parameters using the user list
-						var where_params = {
-							"user_id" : {
-								"$in" : idList
-							},
-							title : {
-								"$exists" : true
-							}
-						};
-						// set the where params on the query
-						_options.data = _options.data || {};
-						_options.data.order = '-created_at';
-						_options.data.per_page = 25;
-						_options.data.where = JSON.stringify(where_params);
+    });
+    // end extend
 
-						// execute the query
-						collection.fetch(_options);
-					} else {
-						Ti.API.error('Error fetching friends');
-						_options.error();
-					}
-				});
-			},
-			/**
-			 * This is getting a bit ahead, but finds photos near current location
-			 * @param {Object} _user
-			 * @param {Object} _location
-			 * @param {Object} _distance
-			 * @param {Object} _options
-			 */
-			findPhotosNearMe : function(_user, _location, _distance, _options) {
-				var collection = this;
+    return Model;
+  },
 
-				// convert distance to radians if provided
-				var distance = _distance ? (_distance / 3959) : 0.00126;
+  extendCollection : function(Collection) {
+    _.extend(Collection.prototype, {
 
-				if (_location === null) {
-					_options.error("Could Not Find Photos");
-					return;
-				}
-				// get all of the current users friends
-				_user.getFriends(function(_resp) {
-					if (_resp.success) { 
-						
-						//debugger;
+      // extended functions go here
+      /**
+       *
+       * @param {Object} _user
+       * @param {Object} _options
+       */
+      findMyPhotosAndWhoIFollow : function(_user, _options) {
+        var collection = this;
 
-						var idList = _.pluck(_resp.collection.models, "id");
-						idList.push(_user.id);
+        // get all of the current users friends
+        _user.getFriends(function(_resp) {
+          if (_resp.success) {
 
-						// first we get the current location
-						var coords = [];
-						coords.push(_location.coords.longitude);
-						coords.push(_location.coords.latitude);
+            // pluck the user ids and add current users id
+            var idList = _.pluck(_resp.collection.models, "id");
+            idList.push(_user.id);
 
-						// set up where parameters
-						var where_params = {
-							"user_id" : {
-								"$in" : idList
-							},
-							"coordinates" : {
-								"$nearSphere" : coords,
-								"$maxDistance" : distance // 5 miles in
-								// radians
-							}
-						};
-						// set the where params on the query
-						_options.data = _options.data || {};
-						_options.data.per_page = 25;
-						_options.data.where = JSON.stringify(where_params);
+            // set up where parameters using the user list
+            var where_params = {
+              "user_id" : {
+                "$in" : idList
+              },
+              title : {
+                "$exists" : true
+              }
+            };
+            // set the where params on the query
+            _options.data = _options.data || {};
+            _options.data.order = '-created_at';
+            _options.data.per_page = 25;
+            _options.data.where = JSON.stringify(where_params);
 
-						// execute the query
-						collection.fetch(_options);
-					} else {
-						_options.error("Could Not Find Photos");
-						return;
-					}
-				});
-			}, //end findPhotosNearMe
-		});
+            // execute the query
+            collection.fetch(_options);
+          } else {
+            Ti.API.error('Error fetching friends');
+            _options.error();
+          }
+        });
+      },
+      /**
+       *
+       * @param {Object} _user
+       * @param {Object} _location
+       * @param {Object} _distance
+       * @param {Object} _options
+       */
+      findPhotosNearMe : function(_user, _location, _distance, _options) {
+        var collection = this;
 
-		return Model;
-	},
-	extendCollection : function(Collection) {
-		_.extend(Collection.prototype, {
-			// extended functions and properties go here
-		});
+        // convert distance to radians if provided
+        var distance = _distance ? (_distance / 3959) : 0.00126;
 
-		return Collection;
-	}
-}; 
+        if (_location === null) {
+          _options.error("Could Not Find Photos");
+          return;
+        }
+        // get all of the current users friends
+        _user.getFriends(function(_resp) {
+          if (_resp.success) {
+
+            var idList = _.pluck(_resp.collection.models, "id");
+            idList.push(_user.id);
+
+            // first we get the current location
+            var coords = [];
+            coords.push(_location.coords.longitude);
+            coords.push(_location.coords.latitude);
+
+            // set up where parameters
+            var where_params = {
+              "user_id" : {
+                "$in" : idList
+              },
+              "coordinates" : {
+                "$nearSphere" : coords,
+                "$maxDistance" : distance // 5 miles in
+                // radians
+              }
+            };
+            // set the where params on the query
+            _options.data = _options.data || {};
+            _options.data.per_page = 25;
+            _options.data.where = JSON.stringify(where_params);
+
+            // execute the query
+            collection.fetch(_options);
+          } else {
+            _options.error("Could Not Find Photos");
+            return;
+          }
+        });
+      }
+    });
+    // end extend
+
+    return Collection;
+  },
+};

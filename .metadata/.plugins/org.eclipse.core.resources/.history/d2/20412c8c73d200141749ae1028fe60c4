@@ -1,7 +1,0 @@
-function doClick(e) {
-    $.menu.open();
-    
-$.index.open();
-function OpenAgenda() {
-	var 
-}

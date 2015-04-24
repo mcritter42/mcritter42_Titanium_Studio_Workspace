@@ -1,8 +1,0 @@
-function doClick(e) {
-    $.menu.open();
-    
-function AgendaButton(e) {  
-    var w=Alloy.createController('Agenda').getView();
-    w.open();
-}
-$.index.open();

@@ -1,8 +1,0 @@
-".container": {
-	backgroundColor: "white"
-}
-".one": {
-	backgroundColor: "black", 
-	width: "75%", 
-	height: "15%"
-}

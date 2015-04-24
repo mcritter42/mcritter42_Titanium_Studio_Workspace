@@ -1,8 +1,0 @@
-".container": {
-	backgroundColor: "white"
-}
-".one": {
-	backgroundColor: "red", 
-	width: "250dp", 
-	height: "125dp",
-}

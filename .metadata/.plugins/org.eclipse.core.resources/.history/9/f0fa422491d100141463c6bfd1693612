@@ -1,8 +1,0 @@
-function doClick(e) {
-    $.menu.open();
-}
-
-function OpenAgenda(e){
-    Titanium.API.info("You clicked the button");
-};
-$.index.open();

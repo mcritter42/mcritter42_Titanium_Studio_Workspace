@@ -1,3 +1,11 @@
+/**
+ * on the open event of the tabGroup, setup the menu and add an
+ * event listener that will reset the menus when the active tab
+ * changes.
+ *
+ * This allows each tab window to have a unique set of menus in
+ * the actionBar
+ */
 function doOpen() {
 
   if (OS_ANDROID) {
@@ -184,3 +192,4 @@ if (user.authenticated() === true) {
 Alloy.Globals.openCurrentTabWindow = function(_window) {
   $.tabGroup.activeTab.open(_window);
 };
+

@@ -1,7 +1,0 @@
-<Alloy>
-	<Tab title="friends">
-		<Window title="friends">
-			<Label>This is friends tab</Label>
-		</Window>
-	</Tab>
-</Alloy>
